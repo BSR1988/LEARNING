@@ -7,6 +7,9 @@ sources:
     schema: PUBLIC
     tables:
       - name: customer
+        columns:
+          - name: CUSTKEY
+            description: 
       - name: lineitem
       - name: nation
       - name: orders
