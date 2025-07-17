@@ -39,9 +39,9 @@ models:
       +materialized: view
     Load:
       +materialized: view
-      +schema: STAGE
+      +schema: LOAD
       +tags: "load"
     stage:
       +materialized: view
-      +schema: LOAD
+      +schema: STAGE
       +tags: "stg"
