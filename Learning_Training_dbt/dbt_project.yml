@@ -23,7 +23,8 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "dbt_packages"
 
 vars:
-
+  CO_CD: 'LEARN'
+  REC_SRC: 'CUSTOMER'
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
@@ -36,10 +37,11 @@ models:
     # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: view
-    
-    load:
+    Load:
+      +materialized: view
+      +schema: STAGE
+      +tags: "load"
+    stage:
       +materialized: view
       +schema: LOAD
-      +tags: "load"
-    
-    stage:
+      +tags: "stg"
