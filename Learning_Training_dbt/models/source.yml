@@ -9,7 +9,7 @@ sources:
       - name: customer
         columns:
           - name: CUSTKEY
-            description: 
+            description: " this contains customer key information which will have unique keys"
       - name: lineitem
       - name: nation
       - name: orders

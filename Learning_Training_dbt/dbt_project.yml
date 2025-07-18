@@ -6,6 +6,7 @@ version: '1.0.0'
 config-version: 2
 
 # This setting configures which "profile" dbt uses for this project.
+
 profile: 'Learning_Training_dbt'
 
 # These configurations specify where dbt should look for different types of files.
@@ -35,13 +36,11 @@ vars:
 models:
   Learning_Training_dbt:
     # Config indicated by + and applies to all files under models/example/
-    example:
-      +materialized: view
     Load:
       +materialized: view
       +schema: LOAD
       +tags: "load"
-    stage:
-      +materialized: view
+    Stage:
+      +materialized: table
       +schema: STAGE
       +tags: "stg"
