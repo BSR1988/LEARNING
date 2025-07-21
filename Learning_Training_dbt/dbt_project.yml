@@ -44,3 +44,6 @@ models:
       +materialized: table
       +schema: STAGE
       +tags: "stg"
+seeds:
+  Learning_Training_dbt:
+    +schema: LOAD
