@@ -1,8 +1,6 @@
-# packages for learning dbt 
-
 packages:
   - package: dbt-labs/dbt_utils
     version: 1.0.0
-    
   - package: Datavault-UK/automate_dv
     version: 0.9.6
+sha1_hash: 16e26c39d6565acd74bc16755d24a91e9905ea63
